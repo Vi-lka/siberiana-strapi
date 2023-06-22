@@ -23,7 +23,9 @@ WORKDIR /opt/app
 COPY --from=build /opt/app ./
 ENV PATH /opt/node_modules/.bin:$PATH
 
-RUN chown -R node:node /opt/app
-USER node
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1002 strapi
+RUN chown -R strapi:nodejs /opt/app
+USER strapi
 EXPOSE 1337
 CMD ["npm", "run", "start"]

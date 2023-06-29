@@ -7,9 +7,11 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "clean": "git clean -xdf .cache node_modules"
   },
   "dependencies": {
+    "@retikolo/drag-drop-content-types": "^1.3.7",
     "@strapi/plugin-graphql": "^4.11.1",
     "@strapi/plugin-i18n": "4.11.1",
     "@strapi/plugin-users-permissions": "4.11.1",

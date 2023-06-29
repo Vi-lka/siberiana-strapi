@@ -16,7 +16,7 @@
     }
   },
   "attributes": {
-    "name": {
+    "Name": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -24,9 +24,9 @@
       },
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
-    "description": {
+    "Content": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -34,20 +34,47 @@
       },
       "type": "richtext"
     },
-    "img": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
+    "Image": {
       "type": "media",
       "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
+    },
+    "Description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "maxLength": 300
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo"
+    },
+    "order": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "integer",
+      "unique": true,
+      "required": true
     }
   }
 }

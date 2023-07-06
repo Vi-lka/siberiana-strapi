@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "singularName": "question",
+    "pluralName": "questions",
+    "displayName": "Квиз",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Tip": {
+      "type": "text",
+      "required": false
+    },
+    "Variant": {
+      "type": "component",
+      "repeatable": true,
+      "component": "questions.variant-otveta",
+      "required": true,
+      "max": 4,
+      "min": 2
+    },
+    "AnswerIndex": {
+      "type": "integer",
+      "required": true
+    },
+    "urlName": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

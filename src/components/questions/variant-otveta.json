@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_questions_variant_otveta",
+  "info": {
+    "displayName": "Вариант ответа",
+    "icon": "question",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Index": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_custom_images_url_rows",
+  "info": {
+    "displayName": "ImagesURLRow",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100,
+      "minLength": 2
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "textUrl": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100,
+      "minLength": 2
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "custom.image-url",
+      "required": true,
+      "max": 8,
+      "min": 4
+    }
+  }
+}

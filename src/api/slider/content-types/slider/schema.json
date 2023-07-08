@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Image": {
+    "Images": {
       "type": "media",
       "multiple": true,
       "required": true,

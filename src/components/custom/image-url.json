@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_custom_image_urls",
+  "info": {
+    "displayName": "ImageURL",
+    "icon": "picture",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

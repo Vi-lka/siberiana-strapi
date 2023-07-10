@@ -4,7 +4,7 @@
   "info": {
     "singularName": "custom",
     "pluralName": "customs",
-    "displayName": "Custom",
+    "displayName": "CustomBlock",
     "description": ""
   },
   "options": {
@@ -24,7 +24,7 @@
           "localized": true
         }
       },
-      "component": "custom.images-url-row",
+      "component": "custom.siberiana-img-url-row",
       "required": true
     }
   }

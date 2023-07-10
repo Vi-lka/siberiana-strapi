@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_custom_images_url_rows",
+  "collectionName": "components_custom_object_url_rows",
   "info": {
-    "displayName": "OrgImgURLRow",
+    "displayName": "ObjectURLRow",
     "icon": "apps",
     "description": ""
   },
@@ -10,28 +10,27 @@
     "title": {
       "type": "string",
       "required": true,
-      "maxLength": 100,
-      "minLength": 2
+      "minLength": 2,
+      "maxLength": 100
     },
     "url": {
       "type": "string",
       "required": true,
-      "regex": "^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$",
-      "unique": false
+      "regex": "^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$"
     },
     "textUrl": {
       "type": "string",
       "required": true,
-      "maxLength": 100,
-      "minLength": 2
+      "minLength": 2,
+      "maxLength": 100
     },
     "list": {
       "type": "component",
       "repeatable": true,
-      "component": "custom.image-url",
+      "component": "custom.object-url",
       "required": true,
-      "max": 8,
-      "min": 1
+      "min": 1,
+      "max": 8
     }
   }
 }

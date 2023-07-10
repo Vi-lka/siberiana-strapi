@@ -1,9 +1,8 @@
 {
-  "collectionName": "components_custom_images_url_rows",
+  "collectionName": "components_custom_siberiana_img_url_rows",
   "info": {
-    "displayName": "OrgImgURLRow",
-    "icon": "apps",
-    "description": ""
+    "displayName": "SiberianaImgURLRow",
+    "icon": "apps"
   },
   "options": {},
   "attributes": {
@@ -16,8 +15,7 @@
     "url": {
       "type": "string",
       "required": true,
-      "regex": "^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$",
-      "unique": false
+      "regex": "^\\/(?!.* )?[-a-zA-Z0-9@:%._\\+~#=&?\\/]*(?!.* )"
     },
     "textUrl": {
       "type": "string",
@@ -28,10 +26,10 @@
     "list": {
       "type": "component",
       "repeatable": true,
-      "component": "custom.image-url",
+      "component": "custom.siberiana-img-url",
       "required": true,
       "max": 8,
-      "min": 1
+      "min": 4
     }
   }
 }

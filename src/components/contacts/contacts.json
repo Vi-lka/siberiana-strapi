@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_contacts_contacts",
+  "info": {
+    "displayName": "Contacts",
+    "icon": "pinMap",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "schedule": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contacts.schedule",
+      "required": false
+    },
+    "map": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

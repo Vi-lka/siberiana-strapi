@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_custom_siberiana_img_urls",
+  "info": {
+    "displayName": "SiberianaImgURL",
+    "icon": "cube"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 70,
+      "minLength": 2
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "regex": "^\\/(?!.* )?[-a-zA-Z0-9@:%._\\+~#=&?\\/]*(?!.* )"
+    }
+  }
+}

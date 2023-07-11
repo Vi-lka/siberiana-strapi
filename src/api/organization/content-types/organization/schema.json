@@ -69,16 +69,6 @@
       "component": "custom.object-url-row",
       "required": false
     },
-    "events": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "custom.event-url-row"
-    },
     "contacts": {
       "type": "component",
       "repeatable": false,
@@ -107,6 +97,22 @@
       },
       "type": "boolean",
       "default": false,
+      "required": true
+    },
+    "events_organization": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::org-event.org-event",
+      "mappedBy": "organization"
+    },
+    "order": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "biginteger",
+      "unique": true,
       "required": false
     }
   }

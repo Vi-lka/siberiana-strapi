@@ -7,4 +7,8 @@ export default ({ env }) => ({
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
+  proxy: env.bool('IS_PROXIED', true),
+  cron: {
+    enabled: env.bool('CRON_ENABLED', true),
+  },
 });

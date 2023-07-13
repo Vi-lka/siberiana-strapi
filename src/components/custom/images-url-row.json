@@ -1,7 +1,7 @@
 {
   "collectionName": "components_custom_images_url_rows",
   "info": {
-    "displayName": "OrgImgURLRow",
+    "displayName": "ImgURLRow",
     "icon": "apps",
     "description": ""
   },
@@ -16,7 +16,7 @@
     "url": {
       "type": "string",
       "required": true,
-      "regex": "^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$",
+      "regex": "^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}(?:.[a-zA-Z0-9()]{1,6})\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$",
       "unique": false
     },
     "textUrl": {

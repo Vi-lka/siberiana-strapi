@@ -28,7 +28,7 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
@@ -82,12 +82,14 @@
     "slug": {
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
-      "type": "uid",
+      "type": "string",
       "targetField": "title",
-      "required": true
+      "unique": false,
+      "required": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
     },
     "consortium": {
       "pluginOptions": {

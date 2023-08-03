@@ -9,13 +9,13 @@
   "attributes": {
     "name": {
       "type": "string",
-      "required": true,
+      "required": false,
       "minLength": 2,
       "maxLength": 70
     },
     "description": {
       "type": "string",
-      "required": true,
+      "required": false,
       "minLength": 2,
       "maxLength": 100
     },

@@ -15,9 +15,6 @@
       "type": "date",
       "required": true
     },
-    "cost": {
-      "type": "biginteger"
-    },
     "name": {
       "type": "string",
       "required": true
@@ -38,6 +35,9 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "cost": {
+      "type": "string"
     }
   }
 }

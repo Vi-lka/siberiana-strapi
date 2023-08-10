@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_faq_faq_categories",
+  "info": {
+    "displayName": "FAQCategory",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "faq.faq-item",
+      "required": true,
+      "min": 1
+    }
+  }
+}

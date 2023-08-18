@@ -79,18 +79,6 @@
       },
       "component": "contacts.contacts"
     },
-    "slug": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "string",
-      "targetField": "title",
-      "unique": false,
-      "required": true,
-      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
-    },
     "consortium": {
       "pluginOptions": {
         "i18n": {
@@ -116,6 +104,16 @@
       "type": "biginteger",
       "unique": true,
       "required": false
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }
